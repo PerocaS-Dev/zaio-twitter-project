@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", serif;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 body{
     font-family: inherit;
@@ -14,30 +14,40 @@ body{
     color: white;
 
 }
+/* side bar */
 .navbar{
-    width: 485px;
+    width: 400px;
+    display: flex;
     align-items: flex-end;
     flex-direction: column;
+    padding: 0px 0px;
     height: 100%;
     border-right: 1px solid rgb(113, 118, 123);
-    /* background: white; */
-    /* overflow-y: scroll; */
 }
-.logo img{
-    width: 65px;
-    margin-left: 8px;
-    margin-right: 127px;
+.categories{
+    width: 220px;
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;    
 }
+
 .menu-item {
     /* width: 100%; */
     display: flex;
+    align-items: stretch;
     border-radius: 1.5rem;
     align-items: center;
     height: 40px;
-    padding: 0 24px;
+    padding: 15px 15px;
     font-size: 14px;
     cursor: pointer;
     font-weight: 400;
+}
+
+.logo img{
+    width: 55px;
+    margin-right: 220px;
 }
 
 .menu-item:hover{
@@ -46,46 +56,65 @@ body{
     opacity: 1;
 }
 .material-icons {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .tweet-button{
     background-color: rgb(29 155 240);
     color: white;
+    border: none;
     border-radius: 1.5rem;
-    width: 70%;
+    width: 85%;
     height: 40px;
-    padding: 8px 16px 8px 16px;
+    padding: 8px 20px 8px 20px;
     font-size: 14px;
     cursor: pointer;
     font-weight: 400;
-    margin-left: 8px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.account-details{
+    width: 220px; 
+    height: 30%;
+
 }
 
 .profile{
     background-color: black;
     color: white;
     display: flex;
+    align-items: stretch;
     border: none;
-    border-radius: 1.5rem;
-    width: 70%;
-    height: 40px;
+    border-radius: 2.0rem;
+    width: 93%;
+    height: 60px;
     padding: 8px 16px 8px 16px;
     font-size: 14px;
     cursor: pointer;
     font-weight: 400;
-    margin-left: 8px;
+    margin-left: 2px;
     margin-top: 100px;
-    margin-bottom: 15px;
 }
 
-.profile .image{
-    border-radius: 100%;
-    margin-right: 10px;
-    padding-top: 8px;
+.profile-info{
+    display: flex;
+   
 }
+
+.profile:hover{
+    background-color: rgb(15, 15, 15);
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .profile img{
-    width: 30px;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom:4px ;
 }
 
 .username{
@@ -94,6 +123,11 @@ body{
 .at{
     font-size: 10px;
     color: rgb(113, 118, 123);
+}
+
+.more .material-icons{
+    margin-left: 60px;
+    margin-top: 10px;
 }
 
 
