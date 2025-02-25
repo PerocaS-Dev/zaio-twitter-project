@@ -16,7 +16,7 @@ body{
 }
 /* side bar */
 .navbar{
-    width: 400px;
+    width: 30vw;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -135,4 +135,14 @@ svg {
     fill: white; /* Makes SVG visible */
     width: 24px;
     height: 24px;
+}
+
+/* Main-section */
+.main-section{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+ 
 }
