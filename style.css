@@ -26,7 +26,7 @@ body{
 }
 .categories{
     width: 220px;
-    height: 70%;
+    height: 85%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;    
@@ -41,28 +41,7 @@ body{
 }
 
 .logo:hover{
-    background-color: rgb(15, 15, 15);
-    visibility: visible;
-    opacity: 1;
-}
-
-.menu-item-active {
-    /* width: 100%; */
-    color: #e7e9ea;
-    display: flex;
-    align-items: stretch;
-    border-radius: 1.5rem;
-    align-items: center;
-    height: 40px;
-    padding: 15px 15px;
-    font-size: 16px;
-    font-weight: bolder;
-    cursor: pointer;
-    gap: 20px; /* it basically replaced margin but also worked for svg */
-}
-
-.menu-item-active:hover{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(22 24 28);
     visibility: visible;
     opacity: 1;
 }
@@ -82,9 +61,13 @@ body{
     gap: 20px; /* it basically replaced margin but also worked for svg */
 }
 
+.active {
+    font-weight: bolder;
+}
+
 
 .menu-item:hover{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(22 24 28);
     visibility: visible;
     opacity: 1;
 }
@@ -101,19 +84,18 @@ body{
     height: 40px;
     padding: 8px 20px 8px 20px;
     font-size: 14px;
-    cursor: pointer;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 2px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-.tweet-button p{
-    font-weight: 500;
+.tweet-button:hover{
+    filter: brightness(90%);  /* adds a sight hue of grey when hovering*/
 }
-
 .account-details{
     width: 220px; 
-    height: 30%;
+    height: 15%;
 
 }
 
@@ -131,7 +113,7 @@ body{
     cursor: pointer;
     font-weight: 400;
     margin-left: 2px;
-    margin-top: 100px;
+     margin-top: 20px;
 }
 
 .profile-info{
