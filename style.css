@@ -32,36 +32,69 @@ body{
     flex-direction: column;    
 }
 
-.menu-item {
+.logo{
+    padding: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 100%;
+
+}
+
+.logo:hover{
+    background-color: rgb(15, 15, 15);
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-item-active {
     /* width: 100%; */
+    color: #e7e9ea;
     display: flex;
     align-items: stretch;
     border-radius: 1.5rem;
     align-items: center;
     height: 40px;
     padding: 15px 15px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    gap: 20px; /* it basically replaced margin but also worked for svg */
+}
+
+.menu-item-active:hover{
+    background-color: rgb(15, 15, 15);
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-item {
+    /* width: 100%; */
+    color: #e7e9ea;
+    display: flex;
+    align-items: stretch;
+    border-radius: 1.5rem;
+    align-items: center;
+    height: 40px;
+    padding: 15px 15px;
+    font-size: 16px;
     cursor: pointer;
     font-weight: 400;
     gap: 20px; /* it basically replaced margin but also worked for svg */
 }
 
-.logo img{
-    width: 55px;
-    margin-right: 220px;
-}
 
 .menu-item:hover{
     background-color: rgb(15, 15, 15);
     visibility: visible;
     opacity: 1;
 }
-/* .material-icons { 
-    margin-right: 20px;
-}*/
+ .material-icons { 
+    width: 1.75rem;
+    height: 1.75rem;
+}
 .tweet-button{
-    background-color: rgb(29 155 240);
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     border: none;
     border-radius: 1.5rem;
     width: 85%;
@@ -72,6 +105,10 @@ body{
     font-weight: 400;
     margin-left: 2px;
     margin-top: 10px;
+}
+
+.tweet-button p{
+    font-weight: 500;
 }
 
 .account-details{
