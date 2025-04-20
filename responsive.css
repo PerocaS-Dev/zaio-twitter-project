@@ -1,0 +1,98 @@
+/* MOBILE FIRST DESIGN - General Fixes */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar,
+.suggestions-section {
+  display: none;
+}
+
+.mid-section {
+  width: 100%;
+  border-right: none;
+}
+
+.custom-tweet {
+  height: clamp(150px, 27%, 200px); /* Adjust based on viewport width */
+  font-size: smaller;
+  overflow-y: auto;
+}
+
+/* ------------------ TABLET VIEW ------------------ */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    min-width: 150px;
+  }
+
+  .mid-section {
+    width: 70vw;
+  }
+
+  .suggestions-section {
+    display: none;
+  }
+}
+
+/* ------------------ DESKTOP VIEW ------------------ */
+@media screen and (min-width: 901px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    min-width: 180px;
+  }
+
+  .mid-section {
+    width: 40vw;
+    border-right: 1px solid rgb(113, 118, 123);
+  }
+
+  .suggestions-section {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    min-width: 250px;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .navbar {
+    overflow-y: auto; /* Allows entire navbar to scroll */
+  }
+
+  .categories {
+    flex-grow: 0; /* Prevents excessive growth */
+    height: auto;
+  }
+
+  .account-details {
+    position: static; /* Keeps profile at bottom when scrolling */
+    margin-top: auto; /* Pushes it to bottom */
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .menu-item span:not(.material-icons) {
+    display: none;
+  }
+
+  .menu-item {
+    justify-content: center;
+    width: auto;
+  }
+}
